@@ -1,0 +1,11 @@
+dash>=3.2,<4
+plotly>=6.1,<7
+Flask>=3.1,<4
+Werkzeug>=3.1,<4
+bcrypt>=4.2,<5
+numpy>=2.0
+Pillow>=10
+requests>=2.32
+scipy>=1.14
+matplotlib>=3.9
+obspy>=1.4
