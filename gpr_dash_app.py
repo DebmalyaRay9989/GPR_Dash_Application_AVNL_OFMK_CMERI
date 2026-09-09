@@ -262,7 +262,7 @@ _PP_DEFAULT_CFG: dict = {
 # supplied Streamlit build when neither environment variables nor secrets.toml
 # are present. It can be removed for production deployments in favour of an
 # environment/secret-only policy.
-_FALLBACK_KEY = ""
+_FALLBACK_KEY = "reykCRkfdScF0S9rTdJq"
 def _read_toml_api_key(path: Path) -> str:
     try:
         if not path.exists():
