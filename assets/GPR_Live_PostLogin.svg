@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">GPR Live Scan Console</title>
+  <desc id="desc">Animated ground penetrating radar scan with a moving sweep, trace grid and target markers.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06111b"/><stop offset="1" stop-color="#0b1d2b"/>
+    </linearGradient>
+    <linearGradient id="trace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#46d9ff" stop-opacity=".1"/><stop offset=".5" stop-color="#46d9ff" stop-opacity=".8"/><stop offset="1" stop-color="#46d9ff" stop-opacity=".08"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="scanClip"><rect x="55" y="105" width="1090" height="500" rx="18"/></clipPath>
+  </defs>
+  <rect width="1200" height="680" rx="28" fill="url(#bg)"/>
+  <rect x="28" y="28" width="1144" height="624" rx="24" fill="none" stroke="#24415a"/>
+  <text x="58" y="68" fill="#e9f6ff" font-family="Segoe UI,Arial" font-size="24" font-weight="700">LIVE GPR SCAN</text>
+  <text x="58" y="91" fill="#6e93aa" font-family="Segoe UI,Arial" font-size="13" letter-spacing="2">UAV / GROUND-PENETRATING RADAR TELEMETRY</text>
+  <g clip-path="url(#scanClip)">
+    <rect x="55" y="105" width="1090" height="500" fill="#071722"/>
+    <g stroke="#173346" stroke-width="1">
+      <path d="M55 155H1145M55 205H1145M55 255H1145M55 305H1145M55 355H1145M55 405H1145M55 455H1145M55 505H1145M55 555H1145"/>
+      <path d="M105 105V605M155 105V605M205 105V605M255 105V605M305 105V605M355 105V605M405 105V605M455 105V605M505 105V605M555 105V605M605 105V605M655 105V605M705 105V605M755 105V605M805 105V605M855 105V605M905 105V605M955 105V605M1005 105V605M1055 105V605M1105 105V605"/>
+    </g>
+    <path d="M55 505 C130 485 145 520 205 500 S300 490 360 455 S430 470 500 420 S565 385 625 415 S690 465 750 420 S815 330 875 365 S930 420 985 350 S1060 330 1145 285" fill="none" stroke="#46d9ff" stroke-width="3" opacity=".72" filter="url(#glow)"/>
+    <path d="M55 545 C120 530 180 560 235 520 S330 545 390 500 S455 485 520 455 S590 470 650 445 S725 510 790 450 S860 395 920 410 S1010 450 1070 385 S1110 380 1145 355" fill="none" stroke="#8affcf" stroke-width="2" opacity=".5"/>
+    <g fill="none" stroke="#ffb34d" stroke-width="5" opacity=".95" filter="url(#glow)">
+      <ellipse cx="475" cy="418" rx="52" ry="31"/>
+      <ellipse cx="850" cy="355" rx="45" ry="27"/>
+    </g>
+    <g fill="#ffb34d">
+      <circle cx="475" cy="418" r="5"/><circle cx="850" cy="355" r="5"/>
+    </g>
+    <rect x="55" y="105" width="5" height="500" fill="url(#trace)">
+      <animate attributeName="x" from="55" to="1140" dur="4.8s" repeatCount="indefinite"/>
+    </rect>
+    <line x1="55" y1="605" x2="1145" y2="605" stroke="#2a526a"/>
+  </g>
+  <g font-family="Segoe UI,Arial" font-size="12">
+    <text x="65" y="625" fill="#66879b">0 ns</text><text x="1085" y="625" fill="#66879b">200 ns</text>
+    <text x="1070" y="132" fill="#4ee4a3">● LIVE</text>
+    <text x="965" y="150" fill="#7797ab">TARGETS: 02</text>
+  </g>
+</svg>
