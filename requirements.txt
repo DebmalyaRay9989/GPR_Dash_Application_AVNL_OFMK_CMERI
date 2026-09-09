@@ -9,3 +9,4 @@ requests>=2.32
 scipy>=1.14
 matplotlib>=3.9
 obspy>=1.4
+gunicorn
